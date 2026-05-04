@@ -3,7 +3,7 @@
 <html>
 
 <head>
-    <title>Example 01.06 - Screen size change</title>
+    <title>Пример 01.06 - Изменение размера экрана I Example 01.06 - Screen size change</title>
     <script type="text/javascript" src="../libs/three.js"></script>
     <script type="text/javascript" src="../libs/stats.js"></script>
     <script type="text/javascript" src="../libs/dat.gui.js"></script>
@@ -118,8 +118,9 @@
         };
 
         var gui = new dat.GUI();
-        gui.add(controls, 'rotationSpeed', 0, 0.5);
-        gui.add(controls, 'bouncingSpeed', 0, 0.5);
+        gui.add(controls, 'rotationSpeed', 0, 0.5).name("Вращение-скорость | rotationSpeed");
+        gui.add(controls, 'bouncingSpeed', 0, 0.5).name("Отскок-скорость | bouncingSpeed");
+
 
         render();
 

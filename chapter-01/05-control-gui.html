@@ -3,7 +3,7 @@
 <html>
 
 <head>
-    <title>Example 01.05 - Control gui</title>
+    <title>Пример 01.05 - Управление графическим интерфейсом пользователя | Example 01.05 - Control gui</title>
     <script type="text/javascript" src="../libs/three.js"></script>
     <script type="text/javascript" src="../libs/stats.js"></script>
     <script type="text/javascript" src="../libs/dat.gui.js"></script>
@@ -114,8 +114,8 @@
         };
 
         var gui = new dat.GUI();
-        gui.add(controls, 'rotationSpeed', 0, 0.5);
-        gui.add(controls, 'bouncingSpeed', 0, 0.5);
+        gui.add(controls, 'rotationSpeed', 0, 0.5).name("Вращение-скорость | rotationSpeed");
+        gui.add(controls, 'bouncingSpeed', 0, 0.5).name("Отскок-скорость | bouncingSpeed");
 
         render();
 
